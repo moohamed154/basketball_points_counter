@@ -19,7 +19,7 @@ class _pointsCounterState extends State<pointsCounter> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-     //   backgroundColor: Colors.black,
+        //   backgroundColor: Colors.black,
         appBar: AppBar(
           backgroundColor: Colors.orange,
           title: const Text('Points Counter'),
@@ -32,7 +32,7 @@ class _pointsCounterState extends State<pointsCounter> {
               children: [
                 Column(
                   children: [
-                   const Text(
+                    const Text(
                       'Team A',
                       style: TextStyle(
                         fontSize: 32,
@@ -47,110 +47,17 @@ class _pointsCounterState extends State<pointsCounter> {
                     ElevatedButton(
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.orange,
-                        minimumSize:const Size(150, 50),
+                        minimumSize: const Size(150, 50),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(5.0),
                         ),
                       ),
                       onPressed: () {
-                        
                         setState(() {
                           teamAPoints++;
                         });
                       },
-                      child:const Text(
-                        'Add 1 Point',
-                        style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 18,
-                        ),
-                      ),
-                    ),
-                  const  SizedBox(
-                      height: 16,
-                    ),
-                    ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.orange,
-                        minimumSize:const Size(150, 50),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(5.0),
-                        ),
-                      ),
-                      onPressed: () {
-                        setState(() {
-                          teamAPoints= teamAPoints+2;
-                        });
-                      },
-                      child:const Text(
-                        'Add 2 Point',
-                        style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 18,
-                        ),
-                      ),
-                    ),
-                  const   SizedBox(
-                      height: 16,
-                    ),
-                    ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.orange,
-                        minimumSize:const Size(150, 50),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(5.0),
-                        ),
-                      ),
-                      onPressed: () {
-                        setState(() {
-                          teamAPoints= teamAPoints+3;                        });
-                      },
-                      child:const Text(
-                        'Add 3 Point',
-                        style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 18,
-                        ),
-                      ),
-                    ),
-                   
-                  ],
-                ),
-               const SizedBox(
-                  height: 480,
-                  child: VerticalDivider(
-                    color: Colors.grey,
-                    thickness: 1,
-                  ),
-                ), 
-                Column(
-                  children: [
-                   const Text(
-                      'Team B',
-                      style: TextStyle(
-                        fontSize: 32,
-                      ),
-                    ),
-                    Text(
-                      '$teamBPoints',
-                      style:const TextStyle(
-                        fontSize: 150,
-                      ),
-                    ),
-                    ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.orange,
-                        minimumSize:const Size(150, 50),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(5.0),
-                        ),
-                      ),
-                      onPressed: () {
-                        setState(() {
-                          teamBPoints++;
-                        });
-                      },
-                      child:const Text(
+                      child: const Text(
                         'Add 1 Point',
                         style: TextStyle(
                           color: Colors.black,
@@ -164,17 +71,17 @@ class _pointsCounterState extends State<pointsCounter> {
                     ElevatedButton(
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.orange,
-                        minimumSize:const Size(150, 50),
+                        minimumSize: const Size(150, 50),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(5.0),
                         ),
                       ),
                       onPressed: () {
                         setState(() {
-                          teamBPoints= teamBPoints+2;
+                          teamAPoints = teamAPoints + 2;
                         });
                       },
-                      child:const Text(
+                      child: const Text(
                         'Add 2 Point',
                         style: TextStyle(
                           color: Colors.black,
@@ -182,23 +89,23 @@ class _pointsCounterState extends State<pointsCounter> {
                         ),
                       ),
                     ),
-                   const  SizedBox(
+                    const SizedBox(
                       height: 16,
                     ),
                     ElevatedButton(
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.orange,
-                        minimumSize:const Size(150, 50),
+                        minimumSize: const Size(150, 50),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(5.0),
                         ),
                       ),
                       onPressed: () {
-                         setState(() {
-                          teamBPoints= teamBPoints+3;
+                        setState(() {
+                          teamAPoints = teamAPoints + 3;
                         });
                       },
-                      child:const Text(
+                      child: const Text(
                         'Add 3 Point',
                         style: TextStyle(
                           color: Colors.black,
@@ -206,36 +113,127 @@ class _pointsCounterState extends State<pointsCounter> {
                         ),
                       ),
                     ),
-                    
                   ],
                 ),
-              ],
-            ),
-         const SizedBox(
-            height: 64,
-          ),
-           ElevatedButton(
+                const SizedBox(
+                  height: 480,
+                  child: VerticalDivider(
+                    color: Colors.grey,
+                    thickness: 1,
+                  ),
+                ),
+                Column(
+                  children: [
+                    const Text(
+                      'Team B',
+                      style: TextStyle(
+                        fontSize: 32,
+                      ),
+                    ),
+                    Text(
+                      '$teamBPoints',
+                      style: const TextStyle(
+                        fontSize: 150,
+                      ),
+                    ),
+                    ElevatedButton(
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.orange,
-                        minimumSize:const Size(150, 50),
+                        minimumSize: const Size(150, 50),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(5.0),
                         ),
                       ),
                       onPressed: () {
-                       setState(() {
-                          teamAPoints = 0;
-                        teamBPoints = 0;
-                       });
+                        setState(() {
+                          teamBPoints++;
+                        });
                       },
-                      child:const Text(
-                        'Reset',
+                      child: const Text(
+                        'Add 1 Point',
                         style: TextStyle(
                           color: Colors.black,
                           fontSize: 18,
                         ),
                       ),
                     ),
+                    const SizedBox(
+                      height: 16,
+                    ),
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.orange,
+                        minimumSize: const Size(150, 50),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(5.0),
+                        ),
+                      ),
+                      onPressed: () {
+                        setState(() {
+                          teamBPoints = teamBPoints + 2;
+                        });
+                      },
+                      child: const Text(
+                        'Add 2 Point',
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 18,
+                        ),
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 16,
+                    ),
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.orange,
+                        minimumSize: const Size(150, 50),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(5.0),
+                        ),
+                      ),
+                      onPressed: () {
+                        setState(() {
+                          teamBPoints = teamBPoints + 3;
+                        });
+                      },
+                      child: const Text(
+                        'Add 3 Point',
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 18,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+            const SizedBox(
+              height: 64,
+            ),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.orange,
+                minimumSize: const Size(150, 50),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(5.0),
+                ),
+              ),
+              onPressed: () {
+                setState(() {
+                  teamAPoints = 0;
+                  teamBPoints = 0;
+                });
+              },
+              child: const Text(
+                'Reset',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 18,
+                ),
+              ),
+            ),
           ],
         ),
       ),
