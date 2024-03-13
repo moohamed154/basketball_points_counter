@@ -58,7 +58,7 @@ class _pointsCounterState extends State<pointsCounter> {
                           teamAPoints++;
                         });
                       },
-                      child: Text(
+                      child:const Text(
                         'Add 1 Point',
                         style: TextStyle(
                           color: Colors.black,
