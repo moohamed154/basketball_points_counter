@@ -1,17 +1,17 @@
-# basketball_points_counter
+# Basketball Points Counter
 
-Basketball Points Counter App
-A new Flutter project.
+A score counter for basketball games.
+
+Track two teams' scores with +1, +2 and +3 point buttons and a reset -
+a compact exercise in stateful UI.
+
+## Tech Stack
+
+Flutter - Dart - StatefulWidget state
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```bash
+flutter pub get
+flutter run
+```
